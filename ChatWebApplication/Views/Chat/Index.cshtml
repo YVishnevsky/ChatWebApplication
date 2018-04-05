@@ -1,0 +1,9 @@
+﻿@section SPAViews {
+    @Html.Partial("_Join")
+    @Html.Partial("_Chat")
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/signalR")
+    <script src="~/signalr/hubs"></script>
+    @Scripts.Render("~/bundles/app")
+}
